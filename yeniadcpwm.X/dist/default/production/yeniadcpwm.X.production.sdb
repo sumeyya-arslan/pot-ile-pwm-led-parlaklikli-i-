@@ -1,0 +1,127 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1825 ]
+[d frameptr 6 ]
+"62 C:\Program Files\Microchip\xc8\v1.34\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files\Microchip\xc8\v1.34\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.34\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 0 0 ]
+"24
+[v _memcpyee memcpyee `(v  1 e 0 0 ]
+"18 C:\Users\stajyer.elektronik\Desktop\yeniadcpwm.X\newmain.c
+[v _main main `(v  1 e 0 0 ]
+[s S175 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+`uc 1 T2CKPS1 1 0 :1:1 
+`uc 1 TMR2ON 1 0 :1:2 
+`uc 1 T2OUTPS0 1 0 :1:3 
+`uc 1 T2OUTPS1 1 0 :1:4 
+`uc 1 T2OUTPS2 1 0 :1:5 
+`uc 1 T2OUTPS3 1 0 :1:6 
+]
+"924 C:\Program Files\Microchip\xc8\v1.34\include\pic16f1825.h
+[s S183 . 1 `uc 1 T2CKPS 1 0 :2:0 
+`uc 1 . 1 0 :1:2 
+`uc 1 T2OUTPS 1 0 :4:3 
+]
+[u S187 . 1 `S175 1 . 1 0 `S183 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES187  1 e 1 @28 ]
+[s S69 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+]
+"1092
+[u S76 . 1 `S69 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES76  1 e 1 @140 ]
+[s S19 . 1 `uc 1 SCS0 1 0 :1:0 
+`uc 1 SCS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 IRCF0 1 0 :1:3 
+`uc 1 IRCF1 1 0 :1:4 
+`uc 1 IRCF2 1 0 :1:5 
+`uc 1 IRCF3 1 0 :1:6 
+`uc 1 SPLLEN 1 0 :1:7 
+]
+"1594
+[s S28 . 1 `uc 1 SCS 1 0 :2:0 
+`uc 1 . 1 0 :1:2 
+`uc 1 IRCF 1 0 :4:3 
+]
+[u S32 . 1 `S19 1 . 1 0 `S28 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES32  1 e 1 @153 ]
+"1710
+[v _ADRESL ADRESL `VEuc  1 e 1 @155 ]
+"1729
+[v _ADRESH ADRESH `VEuc  1 e 1 @156 ]
+[s S116 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 CHS4 1 0 :1:6 
+]
+"1773
+[s S124 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADGO 1 0 :1:1 
+`uc 1 CHS 1 0 :5:2 
+]
+[s S128 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+]
+[u S131 . 1 `S116 1 . 1 0 `S124 1 . 1 0 `S128 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES131  1 e 1 @157 ]
+[s S86 . 1 `uc 1 ADPREF0 1 0 :1:0 
+`uc 1 ADPREF1 1 0 :1:1 
+`uc 1 ADNREF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADCS0 1 0 :1:4 
+`uc 1 ADCS1 1 0 :1:5 
+`uc 1 ADCS2 1 0 :1:6 
+`uc 1 ADFM 1 0 :1:7 
+]
+"1849
+[s S95 . 1 `uc 1 ADPREF 1 0 :2:0 
+`uc 1 . 1 0 :2:2 
+`uc 1 ADCS 1 0 :3:4 
+]
+[u S99 . 1 `S86 1 . 1 0 `S95 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES99  1 e 1 @158 ]
+[s S49 . 1 `uc 1 ANSA0 1 0 :1:0 
+`uc 1 ANSA1 1 0 :1:1 
+`uc 1 ANSA2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 ANSA4 1 0 :1:4 
+]
+"2690
+[s S55 . 1 `uc 1 ANSELA 1 0 :5:0 
+]
+[u S57 . 1 `S49 1 . 1 0 `S55 1 . 1 0 ]
+[v _ANSELAbits ANSELAbits `VES57  1 e 1 @396 ]
+"4797
+[v _CCPR3L CCPR3L `VEuc  1 e 1 @785 ]
+[s S151 . 1 `uc 1 CCP3M0 1 0 :1:0 
+`uc 1 CCP3M1 1 0 :1:1 
+`uc 1 CCP3M2 1 0 :1:2 
+`uc 1 CCP3M3 1 0 :1:3 
+`uc 1 DC3B0 1 0 :1:4 
+`uc 1 DC3B1 1 0 :1:5 
+]
+"4854
+[s S158 . 1 `uc 1 CCP3M 1 0 :4:0 
+`uc 1 DC3B 1 0 :2:4 
+]
+[u S161 . 1 `S151 1 . 1 0 `S158 1 . 1 0 ]
+[v _CCP3CONbits CCP3CONbits `VES161  1 e 1 @787 ]
+"17 C:\Users\stajyer.elektronik\Desktop\yeniadcpwm.X\newmain.c
+[v _adc_value adc_value `ui  1 e 2 0 ]
+"18
+[v _main main `(v  1 e 0 0 ]
+{
+"58
+} 0
